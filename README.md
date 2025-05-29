@@ -6,7 +6,7 @@ Welcome to my personal portfolio! This site showcases who I am, what I do, and h
 
 ## 👤 About Me
 
-I'm **Mukundh Dubasi**, a passionate **full-stack developer** currently pursuing a **B.Tech in Electronics and Telecommunication Engineering (EXTC)**. I love building scalable web apps and continually learning new technologies.
+I'm **Mukundh Dubasi**, a passionate **full-stack developer** currently pursuing a **B.Tech in Computer Science and Engineering(CSE)**. I love building scalable web apps and continually learning new technologies.
 
 ---
 
@@ -71,14 +71,5 @@ Reach out via the contact form on my portfolio or through:
 | `/skills`    | Skills              |
 | `/projects`  | Projects            |
 | `/contact`   | Contact             |
-
----
-
-## 💡 Future Plans
-
-- Add animations using Framer Motion  
-- Add a resume download section  
-- Deploy on a custom domain  
-- Add blog section to share tech articles
 
 ---
