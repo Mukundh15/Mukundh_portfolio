@@ -8,7 +8,7 @@ import {
   Button,
   Card,
   CardContent,
-  Grid,
+  Grid2 as Grid,
   Paper,
   Avatar,
   Stepper,
@@ -102,7 +102,7 @@ const Contact = () => {
 
         <Grid container spacing={4}>
           {/* Contact Information */}
-          <Grid item xs={12} lg={4}>
+          <Grid xs={12} lg={4}>
             <Box mb={4}>
               <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
                 Let's Connect
@@ -160,7 +160,7 @@ const Contact = () => {
           </Grid>
 
           {/* Contact Form */}
-          <Grid item xs={12} lg={8}>
+          <Grid xs={12} lg={8}>
             <Card elevation={3}>
               <CardContent sx={{ p: 4 }}>
                 <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
@@ -169,7 +169,7 @@ const Contact = () => {
                 
                 <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
                   <Grid container spacing={3}>
-                    <Grid item xs={12} md={6}>
+                    <Grid xs={12} md={6}>
                       <TextField
                         fullWidth
                         label="Name"
@@ -180,7 +180,7 @@ const Contact = () => {
                         variant="outlined"
                       />
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid xs={12} md={6}>
                       <TextField
                         fullWidth
                         label="Email"
@@ -192,7 +192,7 @@ const Contact = () => {
                         variant="outlined"
                       />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid xs={12}>
                       <TextField
                         fullWidth
                         label="Subject"
@@ -203,7 +203,7 @@ const Contact = () => {
                         variant="outlined"
                       />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid xs={12}>
                       <TextField
                         fullWidth
                         label="Message"
