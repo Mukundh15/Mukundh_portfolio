@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# 🌐 Mukundh Dubasi - Developer Portfolio
 
-## Project info
+Welcome to my personal portfolio! This site showcases who I am, what I do, and how you can connect with me.
 
-**URL**: https://lovable.dev/projects/ffdb8f48-a4f5-4fad-bcc0-b53ceb3561be
+---
 
-## How can I edit this code?
+## 👤 About Me
 
-There are several ways of editing your application.
+I'm **Mukundh Dubasi**, a passionate **full-stack developer** currently pursuing a **B.Tech in Electronics and Telecommunication Engineering (EXTC)**. I love building scalable web apps and continually learning new technologies.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ffdb8f48-a4f5-4fad-bcc0-b53ceb3561be) and start prompting.
+## 🛠 Skills
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Languages:** JavaScript, Java, Python
+- **Frontend:** React.js, HTML, CSS, Material-UI
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Tools & Platforms:** Git, GitHub, Vite, Postman, Render, Vercel
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📁 Projects
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🔹 StayEasy – Rental Listing Platform
+**Description:** A MERN-stack application that allows users to view and post rental properties.  
+**Live Demo:** [StayEasy App](https://stayeasy-vjvt.onrender.com/listings)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🔹 Parijana – AI Humanoid for Insurance Claims
+An AI-based humanoid agent designed to assist users in navigating the insurance claim process with features like:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Automated form filling using OCR  
+- Feedback and contact system  
+- Admin dashboard  
+- MongoDB integration
 
-# Step 3: Install the necessary dependencies.
-npm i
+**GitHub:** [github.com/Mukundh15/PARIJANA_](https://github.com/Mukundh15/PARIJANA_)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 📬 Contact Me
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Reach out via the contact form on my portfolio or through:
 
-**Use GitHub Codespaces**
+- **Email:** [your-email@example.com]
+- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **GitHub:** [github.com/mukundh-dubasi](https://github.com/mukundh-dubasi)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🔧 Technologies Used
 
-This project is built with:
+| Layer       | Technology           |
+|-------------|----------------------|
+| Frontend    | React.js + Material-UI |
+| Routing     | React Router DOM     |
+| Backend     | Node.js + Express    |
+| Database    | MongoDB              |
+| Deployment  | Vercel, Render       |
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🧭 Website Routes
 
-Simply open [Lovable](https://lovable.dev/projects/ffdb8f48-a4f5-4fad-bcc0-b53ceb3561be) and click on Share -> Publish.
+| Path         | Page                |
+|--------------|---------------------|
+| `/`          | Home                |
+| `/about`     | About Me            |
+| `/skills`    | Skills              |
+| `/projects`  | Projects            |
+| `/contact`   | Contact             |
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 💡 Future Plans
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Add animations using Framer Motion  
+- Add a resume download section  
+- Deploy on a custom domain  
+- Add blog section to share tech articles
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
