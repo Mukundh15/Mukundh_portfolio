@@ -1,31 +1,26 @@
-
 import { useState } from "react";
-import {
-  Box,
-  Container,
-  Typography,
-  TextField,
-  Button,
-  Card,
-  CardContent,
-  Grid2 as Grid,
-  Paper,
-  Avatar,
-  Stepper,
-  Step,
-  StepLabel,
-  CircularProgress,
-  Snackbar,
-  Alert
-} from "@mui/material";
-import {
-  Email,
-  GitHub,
-  LinkedIn,
-  Send,
-  Message,
-  AccessTime
-} from "@mui/icons-material";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Avatar from "@mui/material/Avatar";
+import Stepper from "@mui/material/Stepper";
+import Step from "@mui/material/Step";
+import StepLabel from "@mui/material/StepLabel";
+import CircularProgress from "@mui/material/CircularProgress";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
+
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import SendIcon from "@mui/icons-material/Send";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,10 +29,13 @@ const Contact = () => {
     subject: "",
     message: ""
   });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -58,23 +56,23 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Email />,
+      icon: <EmailIcon />,
       title: "Email",
-      detail: "your.email@example.com",
+      detail: "mukundhdubasi9@gmail.com",
       description: "Send me an email anytime!",
       color: "#1976d2"
     },
     {
-      icon: <GitHub />,
+      icon: <GitHubIcon />,
       title: "GitHub",
-      detail: "github.com/mukundh-dubasi",
+      detail: "github.com/Mukundh15",
       description: "Check out my code repositories",
       color: "#333"
     },
     {
-      icon: <LinkedIn />,
+      icon: <LinkedInIcon />,
       title: "LinkedIn",
-      detail: "linkedin.com/in/yourprofile",
+      detail: "www.linkedin.com/in/mukundh-dubasi",
       description: "Let's connect professionally",
       color: "#0077b5"
     }
@@ -102,7 +100,7 @@ const Contact = () => {
 
         <Grid container spacing={4}>
           {/* Contact Information */}
-          <Grid xs={12} lg={4}>
+          <Grid item xs={12} lg={4}>
             <Box mb={4}>
               <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
                 Let's Connect
@@ -148,7 +146,7 @@ const Contact = () => {
               }}
             >
               <Avatar sx={{ bgcolor: "#1976d2", mx: "auto", mb: 2, width: 56, height: 56 }}>
-                <AccessTime />
+                <AccessTimeIcon />
               </Avatar>
               <Typography variant="h6" fontWeight="semibold" gutterBottom>
                 Response Time
@@ -160,105 +158,115 @@ const Contact = () => {
           </Grid>
 
           {/* Contact Form */}
-          <Grid xs={12} lg={8}>
-            <Card elevation={3}>
-              <CardContent sx={{ p: 4 }}>
-                <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
-                  Send Me a Message
-                </Typography>
-                
-                <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
-                  <Grid container spacing={3}>
-                    <Grid xs={12} md={6}>
-                      <TextField
-                        fullWidth
-                        label="Name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        variant="outlined"
-                      />
-                    </Grid>
-                    <Grid xs={12} md={6}>
-                      <TextField
-                        fullWidth
-                        label="Email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        variant="outlined"
-                      />
-                    </Grid>
-                    <Grid xs={12}>
-                      <TextField
-                        fullWidth
-                        label="Subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleInputChange}
-                        required
-                        variant="outlined"
-                      />
-                    </Grid>
-                    <Grid xs={12}>
-                      <TextField
-                        fullWidth
-                        label="Message"
-                        name="message"
-                        multiline
-                        rows={6}
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required
-                        variant="outlined"
-                        placeholder="Tell me about your project or just say hello..."
-                      />
-                    </Grid>
-                  </Grid>
+          <Grid item xs={12} lg={8}>
+            <Card
+  elevation={6}
+  sx={{
+    p: 4,
+    borderRadius: 4,
+    backgroundColor: "white",
+    boxShadow: "0 8px 24px rgba(0,0,0,0.1)"
+  }}
+>
+  <CardContent>
+    <Typography
+      variant="h4"
+      component="h2"
+      gutterBottom
+      fontWeight="bold"
+      textAlign="center"
+    >
+      Send Me a Message
+    </Typography>
 
-                  <Button
-                    type="submit"
-                    variant="contained"
-                    size="large"
-                    disabled={isSubmitting}
-                    startIcon={isSubmitting ? <CircularProgress size={20} /> : <Send />}
-                    sx={{ mt: 3, minWidth: 160 }}
-                  >
-                    {isSubmitting ? "Sending..." : "Send Message"}
-                  </Button>
-                </Box>
-              </CardContent>
-            </Card>
+    <Typography
+      variant="body1"
+      color="text.secondary"
+      textAlign="center"
+      mb={3}
+    >
+      Fill out the form below and I’ll get back to you as soon as possible.
+    </Typography>
 
-            {/* Process Steps */}
-            <Card sx={{ mt: 4 }}>
-              <CardContent sx={{ p: 4 }}>
-                <Typography variant="h5" fontWeight="semibold" gutterBottom>
-                  What happens next?
-                </Typography>
-                <Stepper orientation="vertical" sx={{ mt: 2 }}>
-                  {steps.map((step, index) => (
-                    <Step key={step} active={true}>
-                      <StepLabel>
-                        <Box>
-                          <Typography variant="subtitle1" fontWeight="semibold">
-                            {step}
-                          </Typography>
-                          <Typography variant="body2" color="text.secondary">
-                            {index === 0 && "Usually within a few hours"}
-                            {index === 1 && "I'll get back to you within 24 hours"}
-                            {index === 2 && "We can set up a call or continue via email"}
-                          </Typography>
-                        </Box>
-                      </StepLabel>
-                    </Step>
-                  ))}
-                </Stepper>
-              </CardContent>
-            </Card>
+    <Box
+      component="form"
+      onSubmit={handleSubmit}
+      sx={{ mt: 2, px: { xs: 0, md: 6 } }}
+    >
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={6}>
+          <TextField
+            fullWidth
+            label="Name"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
+            required
+            variant="outlined"
+          />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <TextField
+            fullWidth
+            label="Email"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+            variant="outlined"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            fullWidth
+            label="Subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleInputChange}
+            required
+            variant="outlined"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            fullWidth
+            label="Message"
+            name="message"
+            multiline
+            rows={6}
+            value={formData.message}
+            onChange={handleInputChange}
+            required
+            variant="outlined"
+            placeholder="Tell me about your project or just say hello..."
+          />
+        </Grid>
+      </Grid>
+
+      <Box textAlign="center">
+        <Button
+          type="submit"
+          variant="contained"
+          size="large"
+          disabled={isSubmitting}
+          startIcon={isSubmitting ? <CircularProgress size={20} /> : <SendIcon />}
+          sx={{
+            mt: 4,
+            px: 5,
+            py: 1.5,
+            fontSize: "1rem",
+            borderRadius: "30px",
+            background: "linear-gradient(135deg, #1976d2, #2196f3)"
+          }}
+        >
+          {isSubmitting ? "Sending..." : "Send Message"}
+        </Button>
+      </Box>
+    </Box>
+  </CardContent>
+</Card>
+
           </Grid>
         </Grid>
 

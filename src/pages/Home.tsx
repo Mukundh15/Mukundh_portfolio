@@ -107,13 +107,13 @@ const Home = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">StayEasy</h3>
                 <p className="text-gray-600 mb-4">
-                  A full-stack rental listing platform built with MERN stack where users can view and post property listings.
+                  A full-stack rental listing platform where users can view and post property listings.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">MongoDB</span>
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Express.js</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React.js</span>
                   <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Node.js</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">EJS</span>
                 </div>
                 <Button variant="outline" size="sm">
                   View Project
@@ -132,7 +132,7 @@ const Home = () => {
                   <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">AI/ML</span>
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">OCR</span>
                   <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">MongoDB</span>
-                  <span className="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">MERN</span>
+                  <span className="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Full Stack</span>
                 </div>
                 <Button variant="outline" size="sm">
                   View Project
