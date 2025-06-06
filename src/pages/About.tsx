@@ -19,8 +19,12 @@ const About = () => {
           {/* Left Column - Image & Quick Info */}
           <div className="lg:col-span-1 space-y-6 animate-scale-in">
             <div className="relative">
-              <div className="w-64 h-64 bg-gradient-to-br from-blue-500 to-purple-700 rounded-2xl mx-auto flex items-center justify-center shadow-2xl">
-                <div className="text-white text-6xl font-bold">MD</div>
+              <div className="w-64 h-64 bg-gradient-to-br from-blue-500 to-purple-700 rounded-2xl mx-auto flex items-center justify-center shadow-2xl overflow-hidden">
+                <img 
+                  src="mukundh.jpg" 
+                  alt="Profile" 
+                  className="w-full h-full object-cover rounded-2xl" 
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
                 <Code2 className="h-8 w-8 text-white" />

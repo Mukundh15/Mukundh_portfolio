@@ -2,6 +2,7 @@
 import { Github, Linkedin, Mail, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
@@ -22,16 +23,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <div className="space-y-2">
-              <a href="/about" className="block text-gray-400 hover:text-white transition-colors text-sm">
+              <a href="/Mukundh_portfolio/about" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 About Me
               </a>
-              <a href="/projects" className="block text-gray-400 hover:text-white transition-colors text-sm">
+              <a href="/Mukundh_portfolio/projects" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Projects
               </a>
-              <a href="/skills" className="block text-gray-400 hover:text-white transition-colors text-sm">
+              <a href="/Mukundh_portfolio/skills" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Skills
               </a>
-              <a href="/contact" className="block text-gray-400 hover:text-white transition-colors text-sm">
+              <a href="/Mukundh_portfolio/contact" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Contact
               </a>
             </div>
@@ -41,23 +42,18 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Connect</h3>
             <div className="flex space-x-3">
-              <a href="https://github.com/Mukundh15" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                  <Github className="h-5 w-5" />
-                </Button>
+              <a href="https://github.com/Mukundh15" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-400 hover:text-white inline-block">
+                <Github className="h-5 w-5" />
               </a>
-              <a href="https://www.linkedin.com/in/mukundh-dubasi-7a7158293/" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                  <Linkedin className="h-5 w-5" />
-                </Button>
+              <a href="https://www.linkedin.com/in/mukundh-dubasi-7a7158293/" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-400 hover:text-white inline-block">
+                <Linkedin className="h-5 w-5" />
               </a>
-              <a href="mailto:mukundhdubasi9@gmail.com">
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                  <Mail className="h-5 w-5" />
-                </Button>
+              <a href="mailto:mukundhdubasi9@gmail.com" className="p-2 text-gray-400 hover:text-white inline-block">
+                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>
+
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
