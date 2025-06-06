@@ -49,10 +49,14 @@ const Home = () => {
             </div>
 
             <div className="relative animate-scale-in">
-              <div className="relative">
-                <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full mx-auto opacity-20 absolute inset-0 animate-pulse"></div>
-                <div className="w-72 h-72 bg-gradient-to-br from-blue-500 to-purple-700 rounded-full mx-auto relative z-10 flex items-center justify-center">
-                  <div className="text-white text-8xl font-bold">MD</div>
+            <div className="relative">
+              <div className="w-80 h-80 bg-gradient-to-br rounded-full mx-auto opacity-20 absolute inset-0 animate-pulse"></div>
+                <div className="w-72 h-72 bg-gradient-to-br rounded-full mx-auto relative z-10 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="mukundh.jpg" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
               </div>
             </div>
