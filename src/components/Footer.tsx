@@ -41,22 +41,28 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Connect</h3>
             <div className="flex space-x-3">
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                <Github className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                <Mail className="h-5 w-5" />
-              </Button>
+              <a href="https://github.com/Mukundh15" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
+                  <Github className="h-5 w-5" />
+                </Button>
+              </a>
+              <a href="www.linkedin.com/in/mukundh-dubasi" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
+                  <Linkedin className="h-5 w-5" />
+                </Button>
+              </a>
+              <a href="mailto:mukundhdubasi9@gmail.com">
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
+                  <Mail className="h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Mukundh Dubasi. All rights reserved. Built with React & TailwindCSS.
+            © 2024 Mukundh Dubasi. All rights reserved.
           </p>
         </div>
       </div>
