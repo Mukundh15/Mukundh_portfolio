@@ -46,7 +46,7 @@ const Footer = () => {
                   <Github className="h-5 w-5" />
                 </Button>
               </a>
-              <a href="www.linkedin.com/in/mukundh-dubasi" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/mukundh-dubasi-7a7158293/" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
                   <Linkedin className="h-5 w-5" />
                 </Button>
