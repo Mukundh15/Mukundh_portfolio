@@ -46,6 +46,36 @@ const Projects = () => {
         "MongoDB integration for data storage",
         "Real-time claim status tracking"
       ]
+    },
+    {
+      id: 3,
+      title: "LFPortal - Lost & Found System",
+      description: "A MERN-based application for reporting lost and found items, featuring secure sessions, image uploads to Cloudinary, and feedback forms.",
+      longDescription: "LFPortal is a web-based platform designed for reporting and finding lost items in colleges or local communities. It supports user authentication, secure session handling, image upload via Cloudinary, and feedback/contact forms. The portal allows users to submit detailed lost/found reports with images and manage them through a user-friendly interface.",
+      tech: [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "Cloudinary",
+        "Multer",
+        "MUI",
+        "express-session",
+        "bcrypt"
+      ],
+      category: "Full-Stack Web Application",
+      liveUrl: "#",
+      githubUrl: "https://github.com/Mukundh15/LFPortal",
+      icon: Search,
+      color: "from-yellow-500 to-orange-600",
+      features: [
+        "Session-based user authentication",
+        "Lost & found item reporting with image upload",
+        "Cloudinary integration for media storage",
+        "Contact and feedback support system",
+        "Responsive UI built with MUI",
+        "Secure backend using express-session and bcrypt"
+      ]
     }
   ];
 

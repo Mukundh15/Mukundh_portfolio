@@ -21,7 +21,7 @@ const About = () => {
             <div className="relative">
               <div className="w-64 h-64 bg-gradient-to-br from-blue-500 to-purple-700 rounded-2xl mx-auto flex items-center justify-center shadow-2xl overflow-hidden">
                 <img 
-                  src="mukundh.jpg" 
+                  src="mukundhphoto.jpg" 
                   alt="Profile" 
                   className="w-full h-full object-cover rounded-2xl" 
                 />
@@ -159,7 +159,7 @@ const About = () => {
               <div>
                 <h3 className="font-semibold text-gray-900">Built Real-World Projects</h3>
                 <p className="text-gray-600 text-sm">
-                  Created projects like StayEasy and Parijana, applying MERN stack technologies 
+                  Created projects like LFPortal,StayEasy and Parijana, applying MERN stack technologies 
                   to solve practical problems.
                 </p>
               </div>

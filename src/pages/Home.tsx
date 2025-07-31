@@ -29,10 +29,13 @@ const Home = () => {
                   View My Work
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline" size="lg">
-                  <Download className="mr-2 h-4 w-4" />
-                  Download CV
+                <Button variant="outline" size="lg" asChild>
+                  <a href="/Resume.pdf" download>
+                    <Download className="mr-2 h-4 w-4" />
+                    Download CV
+                  </a>
                 </Button>
+
               </div>
 
               <div className="flex space-x-4">
@@ -105,6 +108,28 @@ const Home = () => {
               Here are some of my recent projects that showcase my skills in full-stack development
             </p>
           </div>
+          <Card className="hover:shadow-xl transition-shadow duration-300 hover-scale">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">LFPortal - Lost & Found System</h3>
+              <p className="text-gray-600 mb-4">
+                A MERN-based web app that allows users to report and track lost or found items with images, built for colleges and public communities.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">MongoDB</span>
+                <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Express.js</span>
+                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React.js</span>
+                <span className="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Node.js</span>
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Cloudinary</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">MUI</span>
+              </div>
+              <Button variant="outline" size="sm" asChild>
+                <a href="https://github.com/Mukundh15/LFPortal" target="_blank" rel="noopener noreferrer">
+                  View Project
+                  <ArrowRight className="ml-2 h-3 w-3" />
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <Card className="hover:shadow-xl transition-shadow duration-300 hover-scale">
