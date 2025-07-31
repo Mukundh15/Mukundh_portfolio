@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github, Code, Database, Brain } from "lucide-react";
+import { ExternalLink, Github, Code, Database, Brain, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -97,7 +97,6 @@ const Projects = () => {
   return (
     <div className="min-h-screen py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">My Projects</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -106,17 +105,13 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Featured Projects */}
         <div className="space-y-12 mb-16">
           {projects.map((project, index) => (
             <Card key={project.id} className={`overflow-hidden hover:shadow-2xl transition-all duration-300 animate-fade-in ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
               <div className="lg:flex">
-                {/* Project Image/Icon */}
                 <div className={`lg:w-1/3 h-64 lg:h-auto bg-gradient-to-br ${project.color} flex items-center justify-center`}>
                   <project.icon className="h-20 w-20 text-white" />
                 </div>
-
-                {/* Project Content */}
                 <div className="lg:w-2/3 p-8">
                   <div className="space-y-6">
                     <div>
@@ -128,8 +123,6 @@ const Projects = () => {
                       <h2 className="text-2xl font-bold text-gray-900 mb-3">{project.title}</h2>
                       <p className="text-gray-600 mb-4">{project.longDescription}</p>
                     </div>
-
-                    {/* Tech Stack */}
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Tech Stack</h3>
                       <div className="flex flex-wrap gap-2">
@@ -140,8 +133,6 @@ const Projects = () => {
                         ))}
                       </div>
                     </div>
-
-                    {/* Features */}
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Key Features</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-600">
@@ -153,8 +144,6 @@ const Projects = () => {
                         ))}
                       </div>
                     </div>
-
-                    {/* Action Buttons */}
                     <div className="flex space-x-4 pt-4">
                       {project.liveUrl && project.liveUrl !== "#" && (
                         <Button asChild>
@@ -179,8 +168,6 @@ const Projects = () => {
             </Card>
           ))}
         </div>
-
-        {/* Upcoming Projects */}
         <div className="animate-fade-in">
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Upcoming Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -211,8 +198,6 @@ const Projects = () => {
             ))}
           </div>
         </div>
-
-        {/* Tech Stack Summary */}
         <div className="mt-16 animate-fade-in">
           <Card className="bg-gradient-to-r from-blue-50 to-purple-50">
             <CardContent className="pt-6">
