@@ -90,7 +90,7 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description: "Full-featured online shopping platform with payment integration",
       tech: ["React", "Node.js", "Stripe", "PostgreSQL"],
-      status: "In Development"
+      status: "Planning"
     }
   ];
 

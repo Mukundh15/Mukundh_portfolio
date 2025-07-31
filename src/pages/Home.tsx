@@ -25,12 +25,14 @@ const Home = () => {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  View My Work
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+                  <a href="#projects">
+                    View My Work
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="/Resume.pdf" download>
+                  <a href="Resume.pdf" download>
                     <Download className="mr-2 h-4 w-4" />
                     Download CV
                   </a>
@@ -39,14 +41,20 @@ const Home = () => {
               </div>
 
               <div className="flex space-x-4">
-                <Button variant="ghost" size="sm" className="text-gray-600 hover:text-blue-600 p-2">
-                  <Github className="h-5 w-5" />
+                <Button variant="ghost" size="sm" asChild>
+                  <a href="https://github.com/Mukundh15" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-5 w-5" />
+                  </a>
                 </Button>
-                <Button variant="ghost" size="sm" className="text-gray-600 hover:text-blue-600 p-2">
-                  <Linkedin className="h-5 w-5" />
+                <Button variant="ghost" size="sm" className="rounded-full" aria-label="LinkedIn" asChild>
+                  <a href="https://www.linkedin.com/in/mukundh-dubasi-7a7158293/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="h-5 w-5" />
+                  </a>
                 </Button>
-                <Button variant="ghost" size="sm" className="text-gray-600 hover:text-blue-600 p-2">
-                  <Mail className="h-5 w-5" />
+                <Button variant="ghost" size="sm" className="text-gray-600 hover:text-blue-600 p-2" asChild>
+                  <a href="mailto:mukundhdubasi9@gmail.com">
+                    <Mail className="h-5 w-5" />
+                  </a>
                 </Button>
               </div>
             </div>
@@ -56,7 +64,7 @@ const Home = () => {
               <div className="w-80 h-80 bg-gradient-to-br rounded-full mx-auto opacity-20 absolute inset-0 animate-pulse"></div>
                 <div className="w-72 h-72 bg-gradient-to-br rounded-full mx-auto relative z-10 flex items-center justify-center overflow-hidden">
                   <img 
-                    src="mukundh.jpg" 
+                    src="mukundhphoto.jpg" 
                     alt="Profile" 
                     className="w-full h-full object-cover rounded-full"
                   />
@@ -73,7 +81,7 @@ const Home = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="text-3xl font-bold text-blue-600 mb-2">2+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">4+</div>
                 <div className="text-gray-600">Projects Built</div>
               </CardContent>
             </Card>
@@ -98,9 +106,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Featured Projects Preview */}
-      <section className="py-16 bg-gray-50">
+      <section id="projects" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
@@ -108,30 +114,30 @@ const Home = () => {
               Here are some of my recent projects that showcase my skills in full-stack development
             </p>
           </div>
-          <Card className="hover:shadow-xl transition-shadow duration-300 hover-scale">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">LFPortal - Lost & Found System</h3>
-              <p className="text-gray-600 mb-4">
-                A MERN-based web app that allows users to report and track lost or found items with images, built for colleges and public communities.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">MongoDB</span>
-                <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Express.js</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React.js</span>
-                <span className="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Node.js</span>
-                <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Cloudinary</span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">MUI</span>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a href="https://github.com/Mukundh15/LFPortal" target="_blank" rel="noopener noreferrer">
-                  View Project
-                  <ArrowRight className="ml-2 h-3 w-3" />
-                </a>
-              </Button>
-            </CardContent>
-          </Card>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <Card className="hover:shadow-xl transition-shadow duration-300 hover-scale">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">LFPortal - Lost & Found System</h3>
+                <p className="text-gray-600 mb-4">
+                  A MERN-based web app that allows users to report and track lost or found items with images, built for colleges and public communities.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">MongoDB</span>
+                  <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Express.js</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React.js</span>
+                  <span className="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Node.js</span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Cloudinary</span>
+                  <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">MUI</span>
+                </div>
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://github.com/Mukundh15/LFPortal" target="_blank" rel="noopener noreferrer">
+                    View Project
+                    <ArrowRight className="ml-2 h-3 w-3" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
             <Card className="hover:shadow-xl transition-shadow duration-300 hover-scale">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">StayEasy</h3>
@@ -167,6 +173,26 @@ const Home = () => {
                   View Project
                   <ArrowRight className="ml-2 h-3 w-3" />
                 </Button>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-xl transition-shadow duration-300 hover-scale">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Resume Screening using ML</h3>
+                <p className="text-gray-600 mb-4">
+                  A web-based application that classifies and screens resumes using machine learning to suggest relevant job roles.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Scikit-learn</span>
+                  <span className="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Flask</span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">React (Vite)</span>
+                  <span className="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">HTML/CSS</span>
+                </div>
+                <a href="https://github.com/Mukundh15/ResumeScreening" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm">
+                    View Project
+                    <ArrowRight className="ml-2 h-3 w-3" />
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
