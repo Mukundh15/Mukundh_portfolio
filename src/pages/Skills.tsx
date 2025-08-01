@@ -13,6 +13,7 @@ const Skills = () => {
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Frontend Development</h3>
             <ul className="list-disc list-inside text-gray-700 space-y-1">
               <li>HTML, CSS, JavaScript</li>
+              <li>Bootstrap</li>
               <li>React.js with Vite</li>
               <li>React Router</li>
               <li>Tailwind CSS</li>
